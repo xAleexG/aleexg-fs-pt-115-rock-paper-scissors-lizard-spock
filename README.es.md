@@ -24,6 +24,20 @@ Si ambas opciones son iguales, es un empate.
 
 ---
 
+## Ejemplos de Salida
+- User chose: rock
+- Computer chose: lizard
+- You win! 🎉
+
+
+- User chose: paper
+- Computer chose: scissors
+- You lose 😢
+
+- User chose: spock
+- Computer chose: spock
+- It's a draw!
+
 ## 🛠 Cómo ejecutar el programa
 
 El proyecto ya está configurado para funcionar en Codespaces.  
