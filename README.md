@@ -47,3 +47,9 @@ To run the code and see the console output:
 
 ```bash
 node src/app.js
+```
+
+Or you can run 
+npm install 
+then 
+npm run start 

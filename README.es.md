@@ -45,3 +45,6 @@ Para ejecutar el código y ver los mensajes en consola:
 
 ```bash
 node src/app.js
+
+```
+O puedes hacer npm install y despues npm run start para verlo en el browser
