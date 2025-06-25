@@ -12,27 +12,26 @@ const rules = {
     spock: ['scissor', 'rock']
 };
 
-const choicePC = () => {
-    return choices[Math.floor(Math.random() * choices.length)];
+const choicePc = () => {
+  return choices[Math.floor(Math.random() * choices.length)];
+};
+
+function play(yourChoice) {
+  const computerChoice = choicePc();
+  console.log(`Choice pc: ${computerChoice}`);
+  console.log(`Choice player: ${yourChoice}`);
+
+  if (yourChoice === computerChoice) {
+    console.log("Empate");
+    return;
+  }
+  
+  if (rules[yourChoice].includes(computerChoice)) {
+    console.log("Ganas");
+    return;
+  }
+  
+  console.log("Pierdes");
 }
-
-function Play(YourChoice) {
-    let ComputerChoice = choicePC();
-    
-    console.log(`Choice pc: ${ComputerChoice}`);
-    console.log(`Choice player: ${YourChoice}`);
-
-    if (YourChoice === ComputerChoice) {
-        console.log('Empate');
-    }
-    else if (rules[YourChoice].includes(ComputerChoice)) {
-        console.log('Ganas');
-    }
-    else {
-        console.log('Pierdes');
-    }
-}
-
 Play('rock');
-
-console.log("Hello Rigo from the console!");
+console.log("Hello Rigo from the console");
